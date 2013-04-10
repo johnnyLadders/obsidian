@@ -8,3 +8,7 @@ Obsidian has been a project 2 years in development at the College of Charleston'
 
 Team Obsidian was created in order to take the project from a personal bit of code, to a fully functioning Open Source Project. It is our hope that Obsidian will become a useful tool in unit test generation.
 
+**Special Thanks**
+
+Dr. James Bowring, for his continued advice and encouragement.
+Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
