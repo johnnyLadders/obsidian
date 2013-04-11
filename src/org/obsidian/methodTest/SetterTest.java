@@ -45,7 +45,7 @@ public class SetterTest extends MethodTest {
 
     @Override
     void addAssertions() {
-        body.append("\n\n\t\t//Assertions");
+        body.append("\n\n\t\t\t//Assertions");
         
         String exceptionTryTab = "";
         
