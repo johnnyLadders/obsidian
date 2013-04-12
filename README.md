@@ -1,5 +1,9 @@
-[obsidian]:https://github.com/jhhegler/obsidian/blob/master/images/newObsidianSmall%20copy.png?raw=true
-![Alt text][obsidian]
+
+
+<!--Obsidian Logo/ Link to Portal-->
+<p margin-top="1000px" align="center">
+	<a href="http://www.obsidiantest.org"><img  src="https://github.com/jhhegler/obsidian/blob/master/images/newObsidianSmall%20copy.png?raw=true"/></a>
+</p>
 
 **About Obsidian**
 
@@ -15,7 +19,7 @@ Team Obsidian was created in order to take the project from a personal bit of co
 
 Dr. James Bowring, for his continued advice and encouragement.
 
-Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
+Original Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
 
 
 
