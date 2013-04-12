@@ -12,3 +12,7 @@ Team Obsidian was created in order to take the project from a personal bit of co
 
 Dr. James Bowring, for his continued advice and encouragement.
 Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
+
+[obsidian]:/http://www.laryeaquaye.us/obsidian/img/ObsidianLogo.png
+![Alt text][obsidian]
+
