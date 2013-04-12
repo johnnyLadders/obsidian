@@ -2,7 +2,7 @@
 
 <!--Obsidian Logo/ Link to Portal-->
 <p margin-top="1000px" align="center">
-	<a href="http://www.obsidiantest.org"><img  src="https://github.com/jhhegler/obsidian/blob/master/images/newObsidianSmall%20copy.png?raw=true"/></a>
+	<a href="http://www.obsidiantest.org"><img  src="https://github.com/jhhegler/obsidian/blob/master/images/obsidianLogoForREADME.png?raw=true"/></a>
 </p>
 
 **About Obsidian**
