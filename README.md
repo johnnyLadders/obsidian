@@ -1,3 +1,10 @@
+
+
+<!--Obsidian Logo/ Link to Portal-->
+<p margin-top="1000px" align="center">
+	<a href="http://www.obsidiantest.org"><img  src="https://github.com/jhhegler/obsidian/blob/master/images/obsidianLogoForREADME.png?raw=true"/></a>
+</p>
+
 **About Obsidian**
 
 Obsidian is a unit test generator for java built for the JUnit framework. Obsidian concentrates on building standardized test implementations that are comprehensive and easy to maintain, allowing the test engineer to concentrate on test case instantiation. This is in contrast to the strategies of many unit test generators, which focus on generating test cases. These generated test cases are coupled with implementations that are often difficult to maintain or non comprehensive. Obsidian employs a set of design patterns that are built around a method test’s necessities for compilation, exception handling, and test case iteration to generate these implementations.
@@ -11,4 +18,8 @@ Team Obsidian was created in order to take the project from a personal bit of co
 **Special Thanks**
 
 Dr. James Bowring, for his continued advice and encouragement.
-Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
+
+Original Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
+
+
+
