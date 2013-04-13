@@ -22,5 +22,3 @@ Dr. James Bowring, for his continued advice and encouragement.
 Original Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
 
 Special Thanks to the [C.I.R.D.L.E.S](http://cirdles.org/) at the College of Charleston.
-
-
