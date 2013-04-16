@@ -76,6 +76,10 @@ public class MethodSorter {
             if (allMethods[i].getReturnType().toString().compareToIgnoreCase("void") == 0) {
                 notAGetter = true;
             }
+            //if access$000 method
+            if(allMethods[i].getName().matches("access.*")){
+                notAGetter = true;
+            }
             //not notAGetter == getter
             if (!notAGetter) {
                 //add to array list of getters
@@ -127,6 +131,11 @@ public class MethodSorter {
             if (allMethods[i].getName().compareToIgnoreCase("main") == 0) {
                 notASetter = true;
             }
+            //if access$000 method
+            if(allMethods[i].getName().matches("access.*")){
+                notASetter = true;
+            }
+            
             //not notASetter == setter
             if (!notASetter) {
                 //add to array list of getters
