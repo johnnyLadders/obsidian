@@ -1,9 +1,11 @@
 
 
 <!--Obsidian Logo/ Link to Portal-->
-<p margin-top="1000px" align="center">
+<div width="100px" height="100px">
+<p "margin-top="1000px" align="center">
 	<a href="http://www.obsidiantest.org"><img  src="https://github.com/jhhegler/obsidian/blob/master/images/obsidianLogoForREADME.png?raw=true"/></a>
 </p>
+</div>
 
 **About Obsidian**
 
@@ -21,5 +23,6 @@ Dr. James Bowring, for his continued advice and encouragement.
 
 Original Funding for this project was provided by grant EAR-0930166 from the National Science Foundation.
 
+Special Thanks to [C.I.R.D.L.E.S](http://cirdles.org/) at the College of Charleston.
 
 

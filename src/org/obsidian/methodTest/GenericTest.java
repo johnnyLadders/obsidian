@@ -40,7 +40,7 @@ public class GenericTest extends MethodTest {
 
     @Override
     void addAssertions() {
-        body.append("\n\n\t\t//Assertions");
+        body.append("\n\n\t\t//Add Assertions Here");
     }
 
 }
