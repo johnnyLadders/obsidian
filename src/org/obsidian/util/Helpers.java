@@ -26,6 +26,7 @@ import org.obsidian.Main;
 import org.obsidian.obsidianConstants.JUnitConstants;
 import org.obsidian.obsidianConstants.MethodNames;
 import org.obsidian.test.TestAbstract;
+import org.obsidian.obsidianConstants.ClassNames;
 
 /**
  *
@@ -203,7 +204,9 @@ public class Helpers {
         
 
         if (type.isPrimitive()) {
-            assertion.append(JUnitConstants.PRIMITIVE_ASSERT_EQUALS);
+            assertion.append(ClassNames.GLOBAL_EQUALITY_METHODS);
+            assertion.append(".");
+            assertion.append(MethodNames.EQUALITY_METHOD_NAME);
             assertion.append("(// ");
             assertion.append("\n");
             for (int i = 0; i <= tabDepth; i++) {
@@ -215,21 +218,6 @@ public class Helpers {
                 assertion.append("\t");
             }
             assertion.append(valueTwo);
-
-            if (type.getName().compareToIgnoreCase("float") == 0) {
-                assertion.append(" ,//\n");
-                for (int i = 0; i <= tabDepth; i++) {
-                    assertion.append("\t");
-                }
-                assertion.append("0.0f");
-            } else if (type.getName().compareToIgnoreCase("double") == 0) {
-                assertion.append(" ,//\n");
-                for (int i = 0; i <= tabDepth; i++) {
-                    assertion.append("\t");
-                }
-                assertion.append("0.0d");
-
-            }
         } else {
             assertion.append(MethodNames.EQUALITY_METHOD_NAME);
             assertion.append("(//\n");

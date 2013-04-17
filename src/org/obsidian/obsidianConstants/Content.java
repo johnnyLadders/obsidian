@@ -56,7 +56,8 @@ public class Content {
             "org.junit.Test",
             "static org.junit.Assert.*",
             "java.lang.reflect.Field",
-            "org.obsidian.util.MethodMap"
+            "org.obsidian.util.MethodMap",
+            "obsidian.GlobalEqualityMethods"
         };
         public static final String TEST_CLASS_INTRODUCTION = "/**"
                 + "\n\t* The following test class is structured in the Following "
