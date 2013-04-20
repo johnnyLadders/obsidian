@@ -37,11 +37,26 @@ public class GlobalEqualityMethodClass {
     private HashMap<String, GlobalEqualityMethod> methods;
     private String classPackage;
     private ArrayList<String> imports = new ArrayList<String>();
+    private HashMap<String, String> primitiveFullName;
 
     public GlobalEqualityMethodClass(String classPackage) {
 
         //initialize HashMap
         methods = new HashMap<String, GlobalEqualityMethod>();
+        
+         //The primitive map in case anyone uses a primitive by calling the 
+         //fully qualified class name
+        primitiveFullName = new HashMap<String, String>();
+
+        primitiveFullName.put("java.lang.String", "");
+        primitiveFullName.put("java.lang.Byte", "");
+        primitiveFullName.put("java.lang.Short", "");
+        primitiveFullName.put("java.lang.Integer", "");
+        primitiveFullName.put("java.lang.Long", "");
+        primitiveFullName.put("java.lang.Float", "");
+        primitiveFullName.put("java.lang.Double", "");
+        primitiveFullName.put("java.lang.Boolean", "");
+        primitiveFullName.put("java.lang.Character", "");
 
         //initialize classPackage
         this.classPackage = "package obsidian";
@@ -52,7 +67,8 @@ public class GlobalEqualityMethodClass {
 
         //If the method is a primitive type ignore it.
         if (!((Helpers.PRIMITIVE_OBJECT_NAMES.containsValue(classType))
-                || (Helpers.PRIMITIVE_OBJECT_NAMES.containsKey(classType)))) {
+                || (Helpers.PRIMITIVE_OBJECT_NAMES.containsKey(classType))
+                || (primitiveFullName.containsKey(classType.trim())))) {
 
             if (!(methods.containsKey(classType))) {
                 //add
@@ -64,7 +80,8 @@ public class GlobalEqualityMethodClass {
     public void addMethod(String classType, GlobalEqualityMethod method) {
 
         if (!((Helpers.PRIMITIVE_OBJECT_NAMES.containsValue(classType))
-                || (Helpers.PRIMITIVE_OBJECT_NAMES.containsKey(classType)))) {
+                || (Helpers.PRIMITIVE_OBJECT_NAMES.containsKey(classType))
+                || (primitiveFullName.containsKey(classType.trim())))) {
 
             if (!(methods.containsKey(classType))) {
                 //add
