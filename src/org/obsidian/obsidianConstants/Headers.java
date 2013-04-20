@@ -21,7 +21,7 @@ package org.obsidian.obsidianConstants;
  *
  * @author Hunter Hegler (jhhegler@gmail.com)
  * 
- * Contributors:
+ * Contributors: Michael Cole (micole.3@gmail.com)
  *
  */
 public class Headers {
@@ -144,4 +144,21 @@ public class Headers {
                 + "\n\n\t//"
                 + "\n\t// Default Instance"
                 + "\n\t//";
+       
+       //GlobalEqualityMethod header for primitives
+       public static final String GLOBAL_EQUALITY_METHOD_PRIMITIVES = "\n//\n"
+                + "//\n"
+                + "//\n"
+                + "//\n"
+                + "//\n"
+                + "//##########################\n"
+                + "//##########################\n"
+                + "//#### Primitive Methods ###\n"
+                + "//##########################\n"
+                + "//##########################\n"
+                + "//\n"
+                + "//\n"
+                + "//\n"
+                + "//\n"
+                + "//";
 }
