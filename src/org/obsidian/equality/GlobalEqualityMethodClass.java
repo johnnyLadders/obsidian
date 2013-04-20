@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import org.obsidian.obsidianConstants.ClassNames;
+import org.obsidian.obsidianConstants.Headers;
 import org.obsidian.obsidianConstants.Methods;
 import org.obsidian.util.Helpers;
 
@@ -42,9 +43,9 @@ public class GlobalEqualityMethodClass {
 
         //initialize HashMap
         methods = new HashMap<String, GlobalEqualityMethod>();
-
-        //The primitive map in case anyone uses a primitive by calling the 
-        //fully qualified class name
+        
+         //The primitive map in case anyone uses a primitive by calling the 
+         //fully qualified class name
         primitiveFullName = new HashMap<String, String>();
 
         primitiveFullName.put("java.lang.String", "");
@@ -189,87 +190,7 @@ public class GlobalEqualityMethodClass {
                     "String", Methods.DEFAULT_STRING_EQUALITY_METHOD));
         }
         
-        // Primitives
-        if (!(methods.containsKey("byte"))) {
-            this.addMethod("byte", new GlobalEqualityMethod(
-                    "byte", Methods.DEFAULT_BYTE_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("short"))) {
-            this.addMethod("short", new GlobalEqualityMethod(
-                    "short", Methods.DEFAULT_SHORT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("int"))) {
-            this.addMethod("int", new GlobalEqualityMethod(
-                    "int", Methods.DEFAULT_INT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("long"))) {
-            this.addMethod("long", new GlobalEqualityMethod(
-                    "long", Methods.DEFAULT_LONG_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("float"))) {
-            this.addMethod("float", new GlobalEqualityMethod(
-                    "float", Methods.DEFAULT_FLOAT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("double"))) {
-            this.addMethod("double", new GlobalEqualityMethod(
-                    "double", Methods.DEFAULT_DOUBLE_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("boolean"))) {
-            this.addMethod("boolean", new GlobalEqualityMethod(
-                    "boolean", Methods.DEFAULT_BOOLEAN_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("char"))) {
-            this.addMethod("char", new GlobalEqualityMethod(
-                    "char", Methods.DEFAULT_CHAR_EQUALITY_METHOD));
-        }
-
-        //Primitive Objects
-        if (!(methods.containsKey("Byte"))) {
-            this.addMethod("Byte", new GlobalEqualityMethod(
-                    "Byte", Methods.DEFAULT_BYTE_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Short"))) {
-            this.addMethod("Short", new GlobalEqualityMethod(
-                    "Short", Methods.DEFAULT_SHORT_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Integer"))) {
-            this.addMethod("Integer", new GlobalEqualityMethod(
-                    "Integer", Methods.DEFAULT_INTEGER_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Long"))) {
-            this.addMethod("Long", new GlobalEqualityMethod(
-                    "Long", Methods.DEFAULT_LONG_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Float"))) {
-            this.addMethod("Float", new GlobalEqualityMethod(
-                    "Float", Methods.DEFAULT_FLOAT_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Double"))) {
-            this.addMethod("Double", new GlobalEqualityMethod(
-                    "Double", Methods.DEFAULT_DOUBLE_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Boolean"))) {
-            this.addMethod("Boolean", new GlobalEqualityMethod(
-                    "Boolean", Methods.DEFAULT_BOOLEAN_OBJECT_EQUALITY_METHOD));
-        }
-
-        if (!(methods.containsKey("Character"))) {
-            this.addMethod("Character", new GlobalEqualityMethod(
-                    "Character", Methods.DEFAULT_CHARACTER_OBJECT_EQUALITY_METHOD));
-        }
+       
 
         if (!(methods.containsKey("Exception"))) {
              this.addMethod("Exception", new GlobalEqualityMethod(
@@ -288,7 +209,41 @@ public class GlobalEqualityMethodClass {
 
             equalityMethodsClass.append(methods.get(s).getContents());
         }
-        
+        //add the primitive equalities
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Headers.GLOBAL_EQUALITY_METHOD_PRIMITIVES);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_BOOLEAN_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_BOOLEAN_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_BYTE_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_BYTE_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_CHAR_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_CHARACTER_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_DOUBLE_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_DOUBLE_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_FLOAT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_FLOAT_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_INT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_INTEGER_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_LONG_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_LONG_OBJECT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_SHORT_EQUALITY_METHOD);
+        equalityMethodsClass.append("\n\n");
+        equalityMethodsClass.append(Methods.DEFAULT_SHORT_OBJECT_EQUALITY_METHOD);
         equalityMethodsClass.append("\n\n");
         equalityMethodsClass.append(Methods.DEFAULT_SINGLETON_ARENOTEQUAL_METHOD);
 
