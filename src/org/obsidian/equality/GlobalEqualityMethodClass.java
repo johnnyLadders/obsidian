@@ -190,96 +190,96 @@ public class GlobalEqualityMethodClass {
         }
         
         // Primitives
-        if (!(methods.containsKey("byte"))) {
+        
             this.addMethod("byte", new GlobalEqualityMethod(
                     "byte", Methods.DEFAULT_BYTE_EQUALITY_METHOD));
-        }
 
-        if (!(methods.containsKey("short"))) {
+
+        
             this.addMethod("short", new GlobalEqualityMethod(
                     "short", Methods.DEFAULT_SHORT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("int"))) {
+        
             this.addMethod("int", new GlobalEqualityMethod(
                     "int", Methods.DEFAULT_INT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("long"))) {
+        
             this.addMethod("long", new GlobalEqualityMethod(
                     "long", Methods.DEFAULT_LONG_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("float"))) {
+        
             this.addMethod("float", new GlobalEqualityMethod(
                     "float", Methods.DEFAULT_FLOAT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("double"))) {
+        
             this.addMethod("double", new GlobalEqualityMethod(
                     "double", Methods.DEFAULT_DOUBLE_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("boolean"))) {
+        
             this.addMethod("boolean", new GlobalEqualityMethod(
                     "boolean", Methods.DEFAULT_BOOLEAN_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("char"))) {
+        
             this.addMethod("char", new GlobalEqualityMethod(
                     "char", Methods.DEFAULT_CHAR_EQUALITY_METHOD));
-        }
+        
 
         //Primitive Objects
-        if (!(methods.containsKey("Byte"))) {
+        
             this.addMethod("Byte", new GlobalEqualityMethod(
                     "Byte", Methods.DEFAULT_BYTE_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Short"))) {
+        
             this.addMethod("Short", new GlobalEqualityMethod(
                     "Short", Methods.DEFAULT_SHORT_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Integer"))) {
+        
             this.addMethod("Integer", new GlobalEqualityMethod(
                     "Integer", Methods.DEFAULT_INTEGER_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Long"))) {
+        
             this.addMethod("Long", new GlobalEqualityMethod(
                     "Long", Methods.DEFAULT_LONG_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Float"))) {
+        
             this.addMethod("Float", new GlobalEqualityMethod(
                     "Float", Methods.DEFAULT_FLOAT_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Double"))) {
+        
             this.addMethod("Double", new GlobalEqualityMethod(
                     "Double", Methods.DEFAULT_DOUBLE_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Boolean"))) {
+        
             this.addMethod("Boolean", new GlobalEqualityMethod(
                     "Boolean", Methods.DEFAULT_BOOLEAN_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Character"))) {
+        
             this.addMethod("Character", new GlobalEqualityMethod(
                     "Character", Methods.DEFAULT_CHARACTER_OBJECT_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Exception"))) {
+        
              this.addMethod("Exception", new GlobalEqualityMethod(
                      "Exception", Methods.DEFAULT_EXCEPTION_EQUALITY_METHOD));
-        }
+        
 
-        if (!(methods.containsKey("Throwable"))) {
+        
             this.addMethod("Throwable", new GlobalEqualityMethod(
                     "Throwable", Methods.DEFAULT_THROWABLE_EQUALITY_METHOD));
-        }
+        
         
         
 
